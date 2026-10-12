@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Laurazia Hana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU -->
+  <nav>
+    <h2>Laura</h2>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#tugas">Tugas</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <p>Hello, I'm</p>
+    <h1>Laurazia Hana</h1>
+    <h3>Mahasiswa Teknik Informatika</h3>
+    <p>Selamat datang di website portfolio saya.</p>
+    <a href="#tugas" class="tombol">Lihat Tugas</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="kartu">
+      <p>Saya mahasiswa Teknik Informatika yang sedang belajar pemrograman dan pembuatan website.</p>
+      <p><b>Nama:</b> Laurazia Hana</p>
+      <p><b>Universitas:</b> Universitas Budi Luhur</p>
+      <p><b>Fakultas:</b> Teknologi Informasi</p>
+      <p><b>Prodi:</b> Teknik Informatika</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="baris">
+      <div class="kartu skill">
+        <h3>HTML</h3>
+        <p>Struktur website</p>
+      </div>
+      <div class="kartu skill">
+        <h3>CSS</h3>
+        <p>Desain website</p>
+      </div>
+      <div class="kartu skill">
+        <h3>Python</h3>
+        <p>Dasar pemrograman</p>
+      </div>
+      <div class="kartu skill">
+        <h3>Design</h3>
+        <p>Desain grafis</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TUGAS -->
+  <section id="tugas">
+    <h2>Kumpulan Tugas</h2>
+    <div class="baris">
+
+      <div class="kartu">
+        <h3>Upload Tugas</h3>
+        <input type="text" id="inputMatkul" placeholder="Mata kuliah">
+        <input type="file" id="inputFile">
+        <input type="password" id="inputPassword" placeholder="Password">
+        <button id="tombolUpload">Upload</button>
+        <p id="status"></p>
+      </div>
+
+      <div class="kartu">
+        <h3>Tugas Terkumpul</h3>
+        <button id="tombolRefresh">Refresh</button>
+        <ul id="daftar"></ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="kartu">
+      <p>Email: laur4.z.h@gmail.com</p>
+      <p>GitHub: github.com/laur4zh-del</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Laurazia Hana</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

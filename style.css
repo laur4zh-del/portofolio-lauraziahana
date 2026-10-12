@@ -1,0 +1,170 @@
+/* Pengaturan dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background gradasi yang bergerak pelan */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(-45deg, #4f46e5, #9333ea, #ec4899, #06b6d4);
+  background-size: 400% 400%;
+  animation: gerak 15s ease infinite;
+}
+
+@keyframes gerak {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Menu atas */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  color: #fde047;
+}
+
+/* Bagian-bagian halaman */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+/* Bagian Home */
+.hero {
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+.hero h3 {
+  margin-bottom: 15px;
+}
+
+/* Tombol */
+.tombol,
+button {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 15px;
+  background: #fde047;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tombol:hover,
+button:hover {
+  background: white;
+}
+
+/* Kartu */
+.kartu {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.kartu:hover {
+  transform: translateY(-8px);
+}
+
+.kartu p {
+  margin-top: 8px;
+}
+
+/* Susunan kartu berjejer */
+.baris {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.baris .kartu {
+  flex: 1;
+  min-width: 220px;
+}
+
+.skill {
+  text-align: center;
+}
+
+/* Form upload */
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  background: white;
+  color: black;
+}
+
+#status {
+  margin-top: 10px;
+}
+
+/* Daftar tugas */
+ul {
+  margin-top: 15px;
+  list-style: none;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+li a {
+  color: #fde047;
+  word-break: break-all;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.4);
+}
